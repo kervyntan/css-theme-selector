@@ -131,7 +131,7 @@
     --clr-heading: hsl(209 50% 80%);
   }
   
-  :root:has(#pink:checked) {
+  /* :root:has(#pink:checked) {
     --clr-body-bg: hsl(310 50% 90%);
     --clr-card-bg: hsl(310 50% 100%);
     --clr-text: hsl(310 50% 15%);
@@ -157,5 +157,17 @@
     --clr-card-bg: hsl(209 50% 5%);
     --clr-text: hsl(209 50% 90%);
     --clr-heading: hsl(209 50% 80%);
-  }
+  } */
+
+  /* What it does: 
+  It checks the entire page (root) whether it has the element with ID dark
+  and whether that element is checked
+  If conditions are satisfied, then apply the styling to it
   
+  */
+:root:has(#dark:checked) {
+    --clr-body-bg: hsl(209 50% 10%);
+    --clr-card-bg: hsl(209 50% 5%);
+    --clr-text: hsl(209 50% 90%);
+    --clr-heading: hsl(209 50% 80%);
+}
